@@ -1,104 +1,115 @@
-# Pokedex Project
+# Proyecto Pokedex
 
-This project consists of a backend (built with Node.js) and a frontend (built with React.js) for creating a Pokedex application. The backend provides an API to fetch Pokemon data, and the frontend displays and interacts with the data.
+Este proyecto consta de un backend (construido con Node.js) y un frontend (construido con React.js) para crear una aplicación Pokedex. El backend proporciona una API para obtener datos de Pokémon, y el frontend muestra e interactúa con los datos.
 
 ## Backend (Node.js)
 
-### Setup
+### Configuración
 
-1. Clone the repository:
+1. Clona el repositorio:
 
    ```bash
    git clone https://github.com/your-username/pokedex-project.git
    ```
 
-2. Navigate to the `back-end` directory:
+2. Navega al directorio `back-end`:
 
    ```bash
    cd pokedex-project/back-end
    ```
 
-3. Install dependencies:
+3. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-4. Run the development server:
+4. Ejecuta el script de construcción para compilar el código TypeScript:
+
+   ```bash
+   npm run build
+   ```
+
+5. Inicia el servidor de desarrollo:
 
    ```bash
    npm run dev
    ```
 
-   The server will be running on `http://localhost:3000`.
+   El servidor estará disponible en `http://localhost:3000`.
 
 ### Scripts
 
-- `npm run start`: Start the production server.
-- `npm run dev`: Start the development server using Nodemon.
+- `npm run start`: Inicia el servidor en producción.
+- `npm run dev`: Inicia el servidor de desarrollo con Nodemon.
+- `npm run build`: Compila el código TypeScript a JavaScript.
 
-### Dependencies
+### Dependencias
 
-- `axios`: Promise-based HTTP client for making requests to the Pokemon API.
-- `cors`: Middleware to enable Cross-Origin Resource Sharing (CORS).
-- `express`: Web framework for building the backend server.
-- `pdfkit`: Library for creating PDFs.
+- `axios`: Cliente HTTP basado en promesas para realizar solicitudes a la API de Pokémon.
+- `cors`: Middleware para habilitar el Compartir Recursos de Origen Cruzado (CORS).
+- `express`: Marco de trabajo web para construir el servidor backend.
+- `pdfkit`: Biblioteca para crear archivos PDF.
 
-### Development Dependencies
+### Dependencias de Desarrollo
 
-- `@babel/core`: Core Babel functionality.
-- `@babel/preset-env`: Babel preset for compiling JavaScript.
-- `@babel/register`: Babel register for requiring `.ts` files.
-- `@types/axios`: TypeScript type definitions for Axios.
-- `@types/express`: TypeScript type definitions for Express.
-- `@types/node`: TypeScript type definitions for Node.js.
-- `ts-node`: TypeScript execution and REPL for Node.js.
-- `typescript`: TypeScript language support.
+- `@babel/core`: Funcionalidad central de Babel.
+- `@babel/preset-env`: Conjunto de ajustes de Babel para compilar JavaScript.
+- `@babel/register`: Registro de Babel para requerir archivos `.ts`.
+- `@types/axios`: Definiciones de tipos TypeScript para Axios.
+- `@types/express`: Definiciones de tipos TypeScript para Express.
+- `@types/node`: Definiciones de tipos TypeScript para Node.js.
+- `ts-node`: Ejecución de TypeScript y REPL para Node.js.
+- `typescript`: Soporte para el lenguaje TypeScript.
+
+### Construcción para Producción
+
+Antes de implementar tu aplicación backend, asegúrate de ejecutar el script `npm run build` para compilar TypeScript a JavaScript. El código compilado se ubicará en el directorio `dist`.
 
 ## Frontend (React.js)
 
-### Setup
+### Configuración
 
-1. Navigate to the `front-end` directory:
+1. Navega al directorio `front-end`:
 
    ```bash
    cd pokedex-project/front-end
    ```
 
-2. Install dependencies:
+2. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-3. Run the development server:
+3. Inicia el servidor de desarrollo:
 
    ```bash
    npm start
    ```
 
-   The application will be available at `http://localhost:3001`.
+   La aplicación estará disponible en `http://localhost:3001`.
 
 ### Scripts
 
-- `npm start`: Start the development server.
-- `npm run build`: Build the production-ready application.
-- `npm test`: Run tests.
-- `npm run eject`: Eject from Create React App (not recommended unless necessary).
+- `npm start`: Inicia el servidor de desarrollo.
+- `npm run build`: Compila la aplicación lista para producción.
+- `npm test`: Ejecuta pruebas.
+- `npm run eject`: Desvincula de Create React App (no se recomienda a menos que sea necesario).
 
-### Dependencies
+### Dependencias
 
-- `react`: JavaScript library for building user interfaces.
-- `react-dom`: React package for working with the DOM.
-- `react-scripts`: Configuration and scripts for Create React App.
-- `web-vitals`: Library for measuring web vitals.
+- `react`: Biblioteca de JavaScript para construir interfaces de usuario.
+- `react-dom`: Paquete React para trabajar con el DOM.
+- `react-scripts`: Configuración y scripts para Create React App.
+- `web-vitals`: Biblioteca para medir vitales web.
 
 ### Proxy
 
-The frontend is configured to proxy API requests to the backend server at `http://localhost:3000` during development.
+El frontend está configurado para redirigir las solicitudes API al servidor backend en `http://localhost:3000` durante el desarrollo.
 
-## Notes
+## Notas
 
-- Make sure both the backend and frontend are running concurrently to experience the full Pokedex application.
+- Asegúrate de que tanto el backend como el frontend se estén ejecutando simultáneamente para experimentar la aplicación Pokedex completa.
 
-Happy coding! 🚀
+¡Feliz codificación! 🚀
