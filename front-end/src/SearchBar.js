@@ -1,4 +1,4 @@
-// SearchBar.js
+
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
@@ -17,7 +17,7 @@ const SearchBar = ({ onSearch }) => {
       fontSize: '12px',
       border: '1px solid #ccc',
       borderRadius: '3px 0 0 3px',
-      width: '150px',  // Ajustado el ancho
+      width: '150px',
     },
     button: {
       backgroundColor: '#3498db',

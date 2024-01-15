@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import pdfIcon from './download-pdf.png'; // Import your PDF icon image
+import pdfIcon from './download-pdf.png';
 
 const PokemonList = ({ pokemons }) => {
   const [loading, setLoading] = useState(false);
@@ -18,7 +18,7 @@ const PokemonList = ({ pokemons }) => {
 
       if (!response.ok) {
         console.error('Error generating PDF');
-        // Handle the error as needed
+
         return;
       }
 
@@ -31,7 +31,7 @@ const PokemonList = ({ pokemons }) => {
       document.body.removeChild(link);
     } catch (error) {
       console.error('Error:', error);
-      // Handle the error as needed
+
     } finally {
       setLoading(false);
     }
@@ -53,8 +53,8 @@ const PokemonList = ({ pokemons }) => {
       borderRadius: '8px',
       boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)',
       transition: 'transform 0.3s ease-in-out',
-      display: 'flex', // Add this line
-      flexDirection: 'row', // Add this line
+      display: 'flex',
+      flexDirection: 'row',
     },
     itemHover: {
       transform: 'scale(1.05)',
@@ -65,7 +65,7 @@ const PokemonList = ({ pokemons }) => {
       textDecoration: 'none',
       color: '#333',
       fontWeight: 'bold',
-      flex: '1', // Add this line
+      flex: '1',
     },
     linkHover: {
       color: '#e44d26',
