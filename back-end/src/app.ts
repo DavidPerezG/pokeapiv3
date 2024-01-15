@@ -23,9 +23,9 @@ let allPokemons: Pokemon[] = [];
 
     app.use(express.json());
     // Enable CORS for all routes
-    app.use(cors({ origin: 'http://localhost:3001' }))
+    app.use(cors({ origin: '*' }));
 
-    // Pass allPokemons to the pokemonRoutes functionapp.use(express.json());
+    // Pass allPokemons to the pokemonRoutes
     app.use('/api', pokemonRoutes(allPokemons));
 
     // Start the server after setting up the routes

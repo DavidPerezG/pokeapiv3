@@ -9,7 +9,7 @@ const axios = require('axios');
 
 async function getAllPokemons(req: Request, res: Response, allPokemons: Pokemon[]) {
   try {
-    const limit = parseInt(req.query.limit as string, 10) || 0; // Convert to number or use default value
+    const limit = parseInt(req.query.limit as string, 10) || 0; 
     const page = parseInt(req.query.page as string, 10) || 0;
     const search = req.query.q as string || '';
     const pokemons = await pokemonService.getAllPokemonsService(limit, page, search, allPokemons);
@@ -46,19 +46,19 @@ async function generatePokemonPDF(url: string, res: Response) {
     // Add Pokémon details to the PDF in a structured format
     pdf.font('Helvetica-Bold').fontSize(18).text(`Pokémon Details: ${pokemonData.name}`, { align: 'center' });
 
-    pdf.moveDown(0.5); // Add some vertical spacing
+    pdf.moveDown(0.5); 
 
     pdf.font('Helvetica').fontSize(12).text(`ID: ${pokemonData.id}`);
     pdf.text(`Altura: ${pokemonData.height}`);
     pdf.text(`Peso: ${pokemonData.weight}`);
 
-    pdf.moveDown(0.5); // Add some vertical spacing
+    pdf.moveDown(0.5); 
 
     // Add types
     pdf.font('Helvetica-Bold').text('Tipos:');
     pdf.font('Helvetica').text(pokemonData.types.map((type:any) => `  - ${type.type.name}`).join('\n'));
 
-    pdf.moveDown(0.5); // Add some vertical spacing
+    pdf.moveDown(0.5); 
 
     // Add abilities
     pdf.font('Helvetica-Bold').text('Habilidades:');
