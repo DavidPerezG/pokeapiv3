@@ -4,6 +4,10 @@ Este proyecto consta de un backend (construido con Node.js) y un frontend (const
 
 ## Backend (Node.js)
 
+## Documentación de la API
+
+Consulta la [Documentación de la API](https://documenter.getpostman.com/view/24259639/2s9YsNfWXQ) para obtener detalles sobre los endpoints disponibles y cómo utilizarlos con Postman.
+
 ### Configuración
 
 1. Clona el repositorio:
