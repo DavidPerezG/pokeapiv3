@@ -115,5 +115,3 @@ El frontend está configurado para redirigir las solicitudes API al servidor bac
 ## Notas
 
 - Asegúrate de que tanto el backend como el frontend se estén ejecutando simultáneamente para experimentar la aplicación Pokedex completa.
-
-¡Feliz codificación! 🚀
